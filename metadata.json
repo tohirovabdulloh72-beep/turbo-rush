@@ -1,0 +1,7 @@
+{
+  "name": "Turbo Rush",
+  "description": "High-octane 3D arcade racing game with sports cars, AI opponents, nitro boosts, upgrades, dynamic tracks, and custom vehicle garage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

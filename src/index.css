@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', monospace, sans-serif;
+  }
+  .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .bg-immersive-radial {
+    background: radial-gradient(circle at 50% 120%, #1a1a2e 0%, #050508 70%);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 15px rgba(34, 211, 238, 0.8), 0 0 30px rgba(6, 182, 212, 0.5);
+  }
+  .text-glow-amber {
+    text-shadow: 0 0 15px rgba(250, 204, 21, 0.8), 0 0 30px rgba(245, 158, 11, 0.5);
+  }
+  .text-glow-orange {
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.8), 0 0 30px rgba(234, 88, 12, 0.5);
+  }
+  .box-glow-cyan {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.4);
+  }
+  .box-glow-orange {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.45);
+  }
+  .box-glow-amber {
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.35);
+  }
+  .clip-perspective-road {
+    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+  }
+  .clip-road-stripes {
+    clip-path: polygon(48% 0%, 52% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+/* Speed Lines Animation */
+@keyframes speedLineMove {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+.animate-speed-lines {
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 50px,
+    rgba(255, 255, 255, 0.08) 50px,
+    rgba(255, 255, 255, 0.08) 52px
+  );
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(5, 5, 8, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.7);
+}
